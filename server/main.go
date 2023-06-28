@@ -1,8 +1,8 @@
 package main
 
 import (
+	"jichen/network_simulator/server/internal/server"
 	"log"
-	"./server/internal/server"
 )
 
 func main() {

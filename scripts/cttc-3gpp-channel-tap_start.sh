@@ -99,6 +99,12 @@ sleep 5
 echo "Starting server..."
 docker exec server go run . > /tmp/server.log &
 sleep 5
+
+until docker exec left curl -sSf -o /dev/null http://10.1.1.3:8080; do
+    echo "Server is not yet available, retrying..."
+    sleep 5
+done
+
 echo "Pinging server from UE0"
 docker exec left curl -X POST 10.1.1.3:8080 -d '{"activity":{"description":"get resource","time":"2021-12-24T12:42:31Z","device":"iphone","node":"healthy"}}' > /tmp/node1.log
 docker exec left curl -X GET 10.1.1.3:8080 -d '{"id":0}' >> /tmp/node1.log
