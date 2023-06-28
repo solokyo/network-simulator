@@ -1,0 +1,118 @@
+-- Using default output directory /usr/local/ns-allinone-3.37/ns-3.37/build
+-- [33mProceeding without cmake-format[0m
+-- find_external_library: SQLite3 was found.
+-- [33mHarfbuzz is required by GTK3 and was not found.[0m
+-- [33mLibXML2 was not found. Continuing without it.[0m
+-- Could NOT find Python3 (missing: Python3_LIBRARIES Python3_INCLUDE_DIRS Development) (found version "3.8.10")
+-- [33mPython: development libraries were not found[0m
+-- [33mVisualizer requires Python bindings[0m
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR) 
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- [33mGSL was not found. Continuing without it.[0m
+-- [33mdocs: doxygen documentation not enabled due to missing dependencies: doxygen;dot;dia[0m
+-- Failed to locate sphinx-build executable (missing: SPHINX_EXECUTABLE) 
+-- [33mdocs: sphinx documentation not enabled due to missing dependencies: Sphinx;epstopdf;pdflatex;latexmk;convert;dvipng[0m
+-- Precompiled headers were enabled
+-- Processing contrib/nr
+-- Processing src/antenna
+-- Processing src/aodv
+-- Processing src/applications
+-- Processing src/bridge
+-- Processing src/brite
+-- [33mfind_external_library: brite was not found. Missing headers: "Brite.h" and missing libraries: "brite".[0m
+-- [33mSkipping src/brite[0m
+-- Processing src/buildings
+-- Processing src/click
+-- [33mfind_external_library: click was not found. Missing headers: "simclick.h" and missing libraries: "nsclick;click".[0m
+-- [33mSkipping src/click[0m
+-- Processing src/config-store
+-- Processing src/core
+-- Boost Units are an optional feature of length.cc.; Ubuntu ships it within the libboost-dev package.; You may need to clean up the CMake cache after installing it to pass this check.
+-- Processing src/csma
+-- Processing src/csma-layout
+-- Processing src/dsdv
+-- Processing src/dsr
+-- Processing src/energy
+-- Processing src/fd-net-device
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Processing src/flow-monitor
+-- Processing src/internet
+-- Processing src/internet-apps
+-- Processing src/lr-wpan
+-- Processing src/lte
+-- Processing src/mesh
+-- Processing src/mobility
+-- Processing src/netanim
+-- Processing src/network
+-- Processing src/nix-vector-routing
+-- Processing src/olsr
+-- Processing src/openflow
+-- [33mfind_external_library: openflow was not found. Missing headers: "openflow.h" and missing libraries: "openflow".[0m
+-- [33mSkipping src/openflow[0m
+-- Processing src/point-to-point
+-- Processing src/point-to-point-layout
+-- Processing src/propagation
+-- Processing src/sixlowpan
+-- Processing src/spectrum
+-- Processing src/stats
+-- Processing src/tap-bridge
+-- Processing src/test
+-- Processing src/topology-read
+-- Processing src/traffic-control
+-- Processing src/uan
+-- Processing src/virtual-net-device
+-- Processing src/wave
+-- Processing src/wifi
+-- Processing src/wimax
+-- ---- Summary of optional ns-3 features:
+Build profile                 : default
+Build directory               : /usr/local/ns-allinone-3.37/ns-3.37/build
+Build version embedding       : OFF (not requested)
+BRITE Integration             : [31mOFF (missing dependency)[0m
+DES Metrics event collection  : OFF (not requested)
+DPDK NetDevice                : OFF (not requested)
+Emulation FdNetDevice         : [32mON[0m
+Examples                      : [32mON[0m
+File descriptor NetDevice     : [32mON[0m
+GNU Scientific Library (GSL)  : [31mOFF (missing dependency)[0m
+GtkConfigStore                : [31mOFF (missing dependency)[0m
+LibXml2 support               : [31mOFF (missing dependency)[0m
+MPI Support                   : OFF (not requested)
+ns-3 Click Integration        : [31mOFF (missing dependency)[0m
+ns-3 OpenFlow Integration     : [31mOFF (missing dependency)[0m
+Netmap emulation FdNetDevice  : [31mOFF (missing dependency)[0m
+PyViz visualizer              : [31mOFF (missing dependency)[0m
+Python Bindings               : OFF (not requested)
+SQLite support                : [32mON[0m
+Tap Bridge                    : [32mON[0m
+Tap FdNetDevice               : [32mON[0m
+Tests                         : [32mON[0m
+
+
+Modules configured to be built:
+antenna                   aodv                      applications              
+bridge                    buildings                 config-store              
+core                      csma                      csma-layout               
+dsdv                      dsr                       energy                    
+fd-net-device             flow-monitor              internet                  
+internet-apps             lr-wpan                   lte                       
+mesh                      mobility                  netanim                   
+network                   nix-vector-routing        nr                        
+olsr                      point-to-point            point-to-point-layout     
+propagation               sixlowpan                 spectrum                  
+stats                     tap-bridge                test                      
+topology-read             traffic-control           uan                       
+virtual-net-device        wave                      wifi                      
+wimax                     
+
+Modules that cannot be built:
+brite                     click                     mpi                       
+openflow                  visualizer                
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/local/ns-allinone-3.37/ns-3.37/cmake-cache
+Scanning dependencies of target scratch_cttc-3gpp-channel-scratch
+[  0%] Building CXX object scratch/CMakeFiles/scratch_cttc-3gpp-channel-scratch.dir/cttc-3gpp-channel-scratch.cc.o
+[  0%] Linking CXX executable ../../build/scratch/ns3.37-cttc-3gpp-channel-scratch-default

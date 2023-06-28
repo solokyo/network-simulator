@@ -98,7 +98,13 @@ echo "Simulation running..."
 sleep 5
 echo "Starting server..."
 docker exec server go run . > /tmp/server.log &
-sleep 5
+sleep 15
+
+# until docker exec left curl -sSf -o /dev/null http://10.1.1.3:8080; do
+# 	echo "Server not ready, retrying..."
+#	sleep 5
+# done
+
 echo "Pinging server from UE0"
 docker exec left curl -X POST 10.1.1.3:8080 -d '{"activity":{"description":"get resource","time":"2021-12-24T12:42:31Z","device":"iphone","node":"healthy"}}' > /tmp/node1.log
 docker exec left curl -X GET 10.1.1.3:8080 -d '{"id":0}' >> /tmp/node1.log
@@ -116,7 +122,7 @@ n=1
 while [[ -d "results/${date}-${n}" ]] ; do
     n=$(($n+1))
 done
-mkdir "results/${date}-${n}"
+mkdir -p "results/${date}-${n}"
 tar -xf "/tmp/results.tar" -C "results/${date}-${n}"
 rm "/tmp/results.tar"
 mv /tmp/server.log results/${date}-${n}

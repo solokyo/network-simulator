@@ -1,4 +1,4 @@
-module sei/ajgomez/network_simulator/server
+module jichen/network_simulator/server
 
 go 1.18
 
